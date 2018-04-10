@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./stylesheets/header.css">
     <link rel="stylesheet" href="./stylesheets/global.css">
     <link rel="stylesheet" href="./stylesheets/footer.css">
-    <link rel="stylesheet" href="./stylesheets/page-content.css">
+    <link rel="stylesheet" href="./stylesheets/presentation.css">
     <link rel="stylesheet" href="./stylesheets/location-products.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -42,35 +42,6 @@
                 transform: 'scale3d(1, 1, 1)',
                 transition: '500ms ease-in-out',
             });
-        });
-
-        // Arrow scroll down
-        var arrowCover = ('.ntq-cover-arrow');
-        $(arrowCover).on('click', function(){
-            $('html, body').animate({
-                scrollTop: $('.ntq-banner-full-width').offset().top
-            },800);
-        });
-        $(arrowCover).mouseenter(function(){
-            $(this).css({
-                transform: 'scale3d(1.2, 1.2, 1.2)',
-                transition: '300ms ease-in-out',
-            });
-        });
-        $(arrowCover).mouseleave(function(){
-            $(this).css({
-                transform: 'scale3d(1, 1, 1)',
-                transition: '300ms ease-in-out',
-            });
-        });
-
-        // color rent button
-        var button = ('.ntq-product-btn, .ntq-btn');
-        $(button).mouseenter(function(){
-            $(this).css('background-color', '#dd0d1e')
-        });
-        $(button).mouseleave(function(){
-            $(this).css('background-color', 'red')
         });
     });
 
@@ -130,7 +101,7 @@
                     <li><a href="#">quickflex</a></li>
                     <li><a href="#">location/service</a></li>
                     <li><a href="#">entretien</a></li>
-                    <li><a href="./presentation.html">qui sommes-nous ?</a></li>
+                    <li><a href="#">qui sommes-nous ?</a></li>
                 </ul>
             </div>
         </nav>
@@ -139,115 +110,58 @@
             <button id="search" type="button"><img class="ntq-header-search-picto" src="./img/picto_search.svg" alt=""></button>
         </form>
     </header>
+
+        <!-- ***** PAGE CONTENT ************************************** -->
+
     <article class="ntq-page-content">
-        <section class="ntq-cover">
-            <div>
-                <figure>
-                    <div class="ntq-cover-on__title">
-                        <p class="ntq-cover-number">N°1</p>
-                        <p>des remorques porte-bateau en france</p>
-                    </div>
-                    <img style="display: none;" class="ntq-cover-img" src="./img/cover-mobile.jpg" alt="image cover du numero un des remorques porte-bateau en france">
-                    <img class="ntq-cover-arrow" src="./img/picto_scroll_down.svg" alt="Flèche scroll vers le bas">
-                </figure>
-            </div>
-        </section>
-        <section class="ntq-banner-full-width">
-            <div class="ntq-banner-title">
-                <h1>les portes-bateaux</h1>
-            </div>
-            <section>
-                <div class="ntq-banner-block-text">
-                    <p>
-                        <span>Nous transportons vos bateaux depuis bientôt 50 ans sous les marques Satellite, Océana, Rocca et
-                            Nautilus.
-                        </span>
-                        <br>
-                        <br> Nos marques s’inscrivent dans cette tradition historique à l’écoute des professionnels et confortent
-                        au quotidien leur image de leaders techniques. Dotées d’un design élégant, d’une construction de
-                        grande qualité, nos remorques intègrent les solutions techniques les plus abouties pour faciliter
-                        le transport et la manutention de votre bateau en toute sécurité.
+        <section class="ntq-presentation">
+                <div class="ntq-banner-title">
+                        <h2>Qui sommes-nous ?</h2>
+                </div>
+                <div class="ntq-pres-textblock">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vestibulum eu dolor vitae sem ullamcorper mollis non ac diam.
+                        Aenean elementum ex sit amet sapien suscipit, vitae pharetra justo elementum.
+                        Curabitur suscipit volutpat est, in laoreet quam gravida eu.
+                        Maecenas eleifend tincidunt tortor ut lacinia. Donec ac dui tincidunt, viverra odio non, consequat arcu.
+                        Fusce pretium, lacus in semper iaculis, velit felis auctor nulla, nec rhoncus turpis nulla quis purus.
+                        Phasellus vel orci ac enim dignissim faucibus. Donec porta a magna id lobortis.
+                        Proin ullamcorper blandit nibh.
                     </p>
-                    <button class="ntq-btn">découvrez nos produits</button>
+                    <br>
+                    <p>
+                        Aenean id finibus purus.
+                        Vivamus vehicula dictum sem, id dignissim nibh ultricies in.
+                        Morbi rutrum in velit at iaculis. Curabitur rutrum hendrerit quam, vel sollicitudin diam fringilla vitae.
+                        Praesent at lorem velit. Fusce eu tristique mi, vitae auctor lacus.
+                        Maecenas sit amet dolor luctus, pharetra urna ut, interdum ligula.
+                        Sed porttitor fringilla dui, tincidunt fringilla neque pharetra id.
+                        Sed rhoncus mattis leo. Sed vel pharetra lorem.
+                    </p>
+                    <br>
+                    <p>
+                        Aenean dolor libero, vehicula malesuada rutrum semper, viverra cursus sapien.
+                        Integer vitae lorem est. Suspendisse lacinia vehicula nulla, in mattis ex elementum sit amet.
+                        Vestibulum ut tempus justo, ullamcorper suscipit ex.
+                        Pellentesque faucibus erat non metus dignissim, iaculis bibendum purus volutpat.
+                    </p>
                 </div>
-                <div class="ntq-banner-block-img">
-                    <div class="ntq-arrow-prev">
-                        <img src="./img/picto_arrow.svg" alt="">
-                    </div>
+                <div class="ntq-pres-avatar">
                     <figure>
-                        <img src="./img/img_01.png" alt="image d'un porte-bateau">
+                        <img class="avatar-img" src="./img/avatar.png" alt="avatar numéro 1">
+                        <span>A.Anis, PDG</span>
+                        <img class="avatar-img" src="./img/avatar.png" alt="avatar numéro 2">
+                        <span>B.Balis, Employé N°1</span>
+                        <img class="avatar-img" src="./img/avatar.png" alt="avatar numéro 3">
+                        <span>C.Cart, Employé N°2</span>
+                        <img class="avatar-img" src="./img/avatar.png" alt="avatar numéro 4">
+                        <span>D.Dupont, Employé N°3</span>
                     </figure>
-                    <div class="ntq-arrow-next">
-                        <img src="./img/picto_arrow.svg" alt="">
-                    </div>
                 </div>
-                <div class="ntq-banner-price">
-                    <p>469<em>€</em></p>
-                    <span>699<em>€</em></span>
-                    <span></span>
-                    <p>Remorque Nautilus</p>
-                </div>
-            </section>
-        </section>
-        <section>
-            <h2 class="ntq-title">Location</h2>
-            <section class="ntq-other-products">
-                <div class="ntq-product">
-                    <figure>
-                        <img class="zoom-product" src="./img/img_jet_satellite.png" alt="porte bateau jet satellite">
-                    </figure>
-                    <span>Jet Satellite</span>
-                    <ul>
-                        <li>Charge utile : 1880kg</li>
-                        <li>PTC : 2500 kg</li>
-                        <li> Nb essieu : 2</li>
-                        <li>Dimension utile : 4m10x2m00</li>
-                        <li>Roues : 195/55R10C</li>
-                        <li>Frein : Oui</li>
-                    </ul>
-                    <button type="button" class="ntq-product-btn">
-                        Louer
-                    </button>
-                </div>
-                <div class="ntq-product">
-                    <figure>
-                        <img class="zoom-product" src="./img/img_motorboat_satellite.png" alt="porte bateau MotorBoat Satellite">
-                    </figure>
-                    <span>MotorBoat Satellite</span>
-                    <ul>
-                        <li>Charge utile : 1880kg</li>
-                        <li>PTC : 2500 kg</li>
-                        <li> Nb essieu : 2</li>
-                        <li>Dimension utile : 4m10x2m00</li>
-                        <li>Roues : 195/55R10C</li>
-                        <li>Frein : Oui</li>
-                    </ul>
-                    <button type="button" class="ntq-product-btn">
-                        Louer
-                    </button>
-                </div>
-                <div class="ntq-product">
-                    <figure>
-                        <img class="zoom-product" src="./img/img_sailing_keel_and_boat.png" alt="porte bateau Sailing and kell boat">
-                    </figure>
-                    <span>Sailing and kell boat</span>
-                    <ul>
-                        <li>Charge utile : 1880kg</li>
-                        <li>PTC : 2500 kg</li>
-                        <li> Nb essieu : 2</li>
-                        <li>Dimension utile : 4m10x2m00</li>
-                        <li>Roues : 195/55R10C</li>
-                        <li>Frein : Oui</li>
-                    </ul>
-                    <button type="button" class="ntq-product-btn">
-                        Louer
-                    </button>
-                </div>
-            </section>
         </section>
     </article>
 
-    <!-- ***** FOOTER ************************************** -->
+        <!-- ***** FOOTER ************************************** -->
 
     <footer class="ntq-footer">
         <section class="ntq-footer-container">

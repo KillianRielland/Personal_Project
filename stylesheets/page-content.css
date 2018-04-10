@@ -103,22 +103,23 @@
   font-family: 'Arial', regular, sans-serif;
   font-size: 14px;
   float: left;
+  line-height: 1.4;
   margin: 50px 50px 40px 160px;
   text-align: justify;
 }
 
-/* line 97, ../sass/page-content.scss */
+/* line 98, ../sass/page-content.scss */
 .ntq-banner-block-text > p > span {
   padding-bottom: 10px;
   font-weight: bolder;
 }
 
-/* line 102, ../sass/page-content.scss */
+/* line 103, ../sass/page-content.scss */
 .ntq-banner-block-text > p {
   margin: 0;
 }
 
-/* line 106, ../sass/page-content.scss */
+/* line 107, ../sass/page-content.scss */
 .ntq-banner-block-img {
   width: 40%;
   height: auto;
@@ -126,21 +127,21 @@
   margin: 0 0 0 40px;
 }
 
-/* line 113, ../sass/page-content.scss */
+/* line 114, ../sass/page-content.scss */
 .ntq-banner-block-img > figure {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 119, ../sass/page-content.scss */
+/* line 120, ../sass/page-content.scss */
 .ntq-banner-block-img > figure > img {
   height: 320px;
   position: relative;
   top: -110px;
 }
 
-/* line 125, ../sass/page-content.scss */
+/* line 126, ../sass/page-content.scss */
 .ntq-arrow-prev > img {
   position: relative;
   top: 102px;
@@ -148,7 +149,7 @@
   transform: rotate(180deg);
 }
 
-/* line 144, ../sass/page-content.scss */
+/* line 145, ../sass/page-content.scss */
 .ntq-arrow-next > img {
   position: relative;
   bottom: 245px;
@@ -156,7 +157,7 @@
   float: right;
 }
 
-/* line 151, ../sass/page-content.scss */
+/* line 152, ../sass/page-content.scss */
 .ntq-banner-price {
   width: 20%;
   font-size: 18px;
@@ -167,7 +168,7 @@
   top: -105px;
 }
 
-/* line 161, ../sass/page-content.scss */
+/* line 162, ../sass/page-content.scss */
 .ntq-banner-price > p:first-child {
   color: red;
   width: 35%;
@@ -176,12 +177,12 @@
   font-size: 25px;
 }
 
-/* line 169, ../sass/page-content.scss */
+/* line 170, ../sass/page-content.scss */
 .ntq-banner-price > p:last-child {
   font-size: 11px;
 }
 
-/* line 173, ../sass/page-content.scss */
+/* line 174, ../sass/page-content.scss */
 .ntq-banner-price > p > em:first-child {
   color: red;
   font-size: 12px;
@@ -190,23 +191,23 @@
   left: 4px;
 }
 
-/* line 181, ../sass/page-content.scss */
+/* line 182, ../sass/page-content.scss */
 .ntq-banner-price > span:first-child {
   margin-top: 10px;
 }
 
-/* line 185, ../sass/page-content.scss */
+/* line 186, ../sass/page-content.scss */
 .ntq-banner-price > span {
   color: #b2b2b2;
 }
 
-/* line 189, ../sass/page-content.scss */
+/* line 190, ../sass/page-content.scss */
 .ntq-banner-price > span:nth-last-child(n) {
   position: relative;
   top: 6px;
 }
 
-/* line 194, ../sass/page-content.scss */
+/* line 195, ../sass/page-content.scss */
 .ntq-banner-price > span:nth-last-child(2n) {
   display: block;
   position: absolute;
@@ -224,7 +225,7 @@
   transform: rotate(-45deg);
 }
 
-/* line 211, ../sass/page-content.scss */
+/* line 212, ../sass/page-content.scss */
 .ntq-banner-price > span > em {
   color: #b2b2b2;
   font-size: 12px;
@@ -233,7 +234,7 @@
   left: 4px;
 }
 
-/* line 219, ../sass/page-content.scss */
+/* line 220, ../sass/page-content.scss */
 .ntq-btn {
   margin-top: 30px;
   padding: 20px 25px;
@@ -247,46 +248,46 @@
 
 /* MOBILE VERSION ******************************************************************/
 @media screen and (max-width: 480px) {
-  /* line 235, ../sass/page-content.scss */
+  /* line 236, ../sass/page-content.scss */
   .ntq-header {
     height: 165px;
   }
 
-  /* line 239, ../sass/page-content.scss */
+  /* line 240, ../sass/page-content.scss */
   .ntq-page-content > section:nth-child(3n) {
     margin-top: 0;
   }
 
-  /* line 243, ../sass/page-content.scss */
+  /* line 244, ../sass/page-content.scss */
   .ntq-cover {
     height: 72vh;
   }
 
-  /* line 247, ../sass/page-content.scss */
+  /* line 248, ../sass/page-content.scss */
   .ntq-cover > div {
     height: 82vh;
   }
 
-  /* line 251, ../sass/page-content.scss */
+  /* line 252, ../sass/page-content.scss */
   .ntq-cover > div > figure > img {
     display: block !important;
     height: 82vh;
     margin-top: -170px;
   }
 
-  /* line 257, ../sass/page-content.scss */
+  /* line 258, ../sass/page-content.scss */
   .ntq-cover > div > figure > .ntq-cover-img {
     visibility: visible;
   }
 
-  /* line 261, ../sass/page-content.scss */
+  /* line 262, ../sass/page-content.scss */
   .ntq-cover > div > figure {
     height: 100%;
     width: 100%;
     margin: 0;
   }
 
-  /* line 267, ../sass/page-content.scss */
+  /* line 268, ../sass/page-content.scss */
   .ntq-cover > div > figure > img:last-child {
     width: 100%;
     height: 243px;
@@ -294,7 +295,7 @@
     top: -70px;
   }
 
-  /* line 274, ../sass/page-content.scss */
+  /* line 275, ../sass/page-content.scss */
   .ntq-cover-on__title {
     background: transparent;
     color: #fff;
@@ -305,7 +306,7 @@
     width: 100%;
   }
 
-  /* line 284, ../sass/page-content.scss */
+  /* line 285, ../sass/page-content.scss */
   .ntq-cover-number {
     z-index: 10;
     width: 30% !important;
@@ -317,7 +318,7 @@
     letter-spacing: -16px;
   }
 
-  /* line 295, ../sass/page-content.scss */
+  /* line 296, ../sass/page-content.scss */
   .ntq-cover-on__title > p:nth-child(2n) {
     font-size: 22px;
     width: 100%;
@@ -327,24 +328,24 @@
     top: 52px;
   }
 
-  /* line 304, ../sass/page-content.scss */
+  /* line 305, ../sass/page-content.scss */
   .ntq-banner-full-width {
     min-height: 510px;
   }
 
-  /* line 308, ../sass/page-content.scss */
+  /* line 309, ../sass/page-content.scss */
   .ntq-banner-full-width > .ntq-banner-title {
     height: 90px;
   }
 
-  /* line 312, ../sass/page-content.scss */
+  /* line 313, ../sass/page-content.scss */
   .ntq-banner-full-width > section {
     width: 100%;
     min-height: 340px;
     background-color: #f3f5f9;
   }
 
-  /* line 318, ../sass/page-content.scss */
+  /* line 319, ../sass/page-content.scss */
   .ntq-banner-full-width > div > h1 {
     margin: 0;
     font-size: 21px;
@@ -352,7 +353,7 @@
     font-weight: 100;
   }
 
-  /* line 325, ../sass/page-content.scss */
+  /* line 326, ../sass/page-content.scss */
   .ntq-banner-block-text {
     width: 90%;
     font-size: 13px;
@@ -361,12 +362,12 @@
     text-align: justify;
   }
 
-  /* line 333, ../sass/page-content.scss */
+  /* line 334, ../sass/page-content.scss */
   .ntq-btn {
     margin-left: 47px;
   }
 
-  /* line 337, ../sass/page-content.scss */
+  /* line 338, ../sass/page-content.scss */
   .ntq-banner-block-img {
     width: 40%;
     height: auto;
@@ -374,21 +375,21 @@
     margin: 0 0 0 40px;
   }
 
-  /* line 344, ../sass/page-content.scss */
+  /* line 345, ../sass/page-content.scss */
   .ntq-banner-block-img > figure {
     margin: 0;
     padding: 0;
     width: 100%;
   }
 
-  /* line 350, ../sass/page-content.scss */
+  /* line 351, ../sass/page-content.scss */
   .ntq-banner-block-img > figure > img {
     height: 180px;
     position: relative;
     top: -80px;
   }
 
-  /* line 356, ../sass/page-content.scss */
+  /* line 357, ../sass/page-content.scss */
   .ntq-arrow-prev > img {
     position: relative;
     top: 25px;
@@ -396,7 +397,7 @@
     transform: rotate(180deg);
   }
 
-  /* line 364, ../sass/page-content.scss */
+  /* line 365, ../sass/page-content.scss */
   .ntq-arrow-next > img {
     position: relative;
     bottom: 181px;
@@ -404,7 +405,7 @@
     float: right;
   }
 
-  /* line 371, ../sass/page-content.scss */
+  /* line 372, ../sass/page-content.scss */
   .ntq-banner-price {
     width: 67%;
     right: -108px;
@@ -414,22 +415,22 @@
 }
 /* TAB VERSION ******************************************************************/
 @media screen and (min-width: 481px) and (max-width: 780px) {
-  /* line 384, ../sass/page-content.scss */
+  /* line 385, ../sass/page-content.scss */
   .ntq-page-content > section:nth-child(3n) {
     margin-top: 0;
   }
 
-  /* line 388, ../sass/page-content.scss */
+  /* line 389, ../sass/page-content.scss */
   .ntq-cover {
     height: 74vh;
   }
 
-  /* line 392, ../sass/page-content.scss */
+  /* line 393, ../sass/page-content.scss */
   .ntq-cover > div {
     height: 74vh;
   }
 
-  /* line 396, ../sass/page-content.scss */
+  /* line 397, ../sass/page-content.scss */
   .ntq-cover > div > figure {
     margin: 0;
     padding: 0;
@@ -440,12 +441,12 @@
     height: 74vh;
   }
 
-  /* line 406, ../sass/page-content.scss */
+  /* line 407, ../sass/page-content.scss */
   .ntq-cover > div > figure > .ntq-cover-img {
     display: none;
   }
 
-  /* line 410, ../sass/page-content.scss */
+  /* line 411, ../sass/page-content.scss */
   .ntq-cover > div > figure > img:last-child {
     width: 100%;
     height: 315px;
@@ -453,7 +454,7 @@
     top: 370px;
   }
 
-  /* line 417, ../sass/page-content.scss */
+  /* line 418, ../sass/page-content.scss */
   .ntq-cover-on__title {
     background: transparent;
     color: #fff;
@@ -464,7 +465,7 @@
     width: 100%;
   }
 
-  /* line 427, ../sass/page-content.scss */
+  /* line 428, ../sass/page-content.scss */
   .ntq-cover-number {
     z-index: 10;
     width: 40% !important;
@@ -476,7 +477,7 @@
     letter-spacing: -16px;
   }
 
-  /* line 438, ../sass/page-content.scss */
+  /* line 439, ../sass/page-content.scss */
   .ntq-cover-on__title > p:nth-child(2n) {
     font-size: 35px;
     width: 100%;
@@ -486,24 +487,24 @@
     margin: 0;
   }
 
-  /* line 447, ../sass/page-content.scss */
+  /* line 448, ../sass/page-content.scss */
   .ntq-banner-full-width {
     min-height: 430px;
   }
 
-  /* line 451, ../sass/page-content.scss */
+  /* line 452, ../sass/page-content.scss */
   .ntq-banner-full-width > .ntq-banner-title {
     height: 90px;
   }
 
-  /* line 455, ../sass/page-content.scss */
+  /* line 456, ../sass/page-content.scss */
   .ntq-banner-full-width > section {
     width: 100%;
     min-height: 340px;
     background-color: #f3f5f9;
   }
 
-  /* line 461, ../sass/page-content.scss */
+  /* line 462, ../sass/page-content.scss */
   .ntq-banner-full-width > div > h1 {
     margin: 0;
     font-size: 21px;
@@ -511,7 +512,7 @@
     font-weight: 100;
   }
 
-  /* line 468, ../sass/page-content.scss */
+  /* line 469, ../sass/page-content.scss */
   .ntq-banner-block-text {
     width: 50%;
     font-size: 13px;
@@ -520,14 +521,14 @@
     text-align: justify;
   }
 
-  /* line 476, ../sass/page-content.scss */
+  /* line 477, ../sass/page-content.scss */
   .ntq-btn {
     margin-left: 47px;
     padding: 15px 15px;
     font-size: 12px;
   }
 
-  /* line 482, ../sass/page-content.scss */
+  /* line 483, ../sass/page-content.scss */
   .ntq-banner-block-img {
     width: 27%;
     height: auto;
@@ -535,21 +536,21 @@
     margin: 0 0 0 40px;
   }
 
-  /* line 489, ../sass/page-content.scss */
+  /* line 490, ../sass/page-content.scss */
   .ntq-banner-block-img > figure {
     margin: 0;
     padding: 0;
     width: 100%;
   }
 
-  /* line 495, ../sass/page-content.scss */
+  /* line 496, ../sass/page-content.scss */
   .ntq-banner-block-img > figure > img {
     height: 150px;
     position: relative;
     top: -45px;
   }
 
-  /* line 501, ../sass/page-content.scss */
+  /* line 502, ../sass/page-content.scss */
   .ntq-arrow-prev > img {
     position: relative;
     top: 50px;
@@ -557,7 +558,7 @@
     transform: rotate(180deg);
   }
 
-  /* line 508, ../sass/page-content.scss */
+  /* line 509, ../sass/page-content.scss */
   .ntq-arrow-next > img {
     position: relative;
     bottom: 126px;
@@ -565,7 +566,7 @@
     float: right;
   }
 
-  /* line 515, ../sass/page-content.scss */
+  /* line 516, ../sass/page-content.scss */
   .ntq-banner-price {
     width: 21%;
     right: 90px;
@@ -573,83 +574,83 @@
     float: right;
   }
 
-  /* line 522, ../sass/page-content.scss */
+  /* line 523, ../sass/page-content.scss */
   .ntq-banner-price > p:first-child {
     width: 51%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 530, ../sass/page-content.scss */
+  /* line 531, ../sass/page-content.scss */
   .ntq-banner-block-img > figure > img {
     height: 225px;
     position: relative;
     top: 10px;
   }
 
-  /* line 536, ../sass/page-content.scss */
+  /* line 537, ../sass/page-content.scss */
   .ntq-arrow-next > img {
     bottom: 150px;
     left: -10px;
   }
 
-  /* line 541, ../sass/page-content.scss */
+  /* line 542, ../sass/page-content.scss */
   .ntq-cover-on__title {
     width: 35%;
   }
 
-  /* line 545, ../sass/page-content.scss */
+  /* line 546, ../sass/page-content.scss */
   .ntq-cover {
     height: 60vh;
   }
 
-  /* line 549, ../sass/page-content.scss */
+  /* line 550, ../sass/page-content.scss */
   .ntq-banner-full-width > div > h1 {
     padding: 40px 0 40px 100px;
   }
 
-  /* line 553, ../sass/page-content.scss */
+  /* line 554, ../sass/page-content.scss */
   .ntq-title {
     padding: 40px 0 40px 100px;
   }
 
-  /* line 557, ../sass/page-content.scss */
+  /* line 558, ../sass/page-content.scss */
   .ntq-banner-full-width > .ntq-banner-title {
     height: 124px;
   }
 
-  /* line 561, ../sass/page-content.scss */
+  /* line 562, ../sass/page-content.scss */
   .ntq-banner-full-width {
     min-height: 465px;
   }
 
-  /* line 565, ../sass/page-content.scss */
+  /* line 566, ../sass/page-content.scss */
   .ntq-banner-block-text {
     margin: 40px 50px 0 120px;
   }
 
-  /* line 569, ../sass/page-content.scss */
+  /* line 570, ../sass/page-content.scss */
   .ntq-banner-full-width > section {
     min-height: 350px;
   }
 
-  /* line 573, ../sass/page-content.scss */
+  /* line 574, ../sass/page-content.scss */
   .ntq-banner-price {
     float: right;
     right: 145px;
     top: 8px;
   }
 
-  /* line 579, ../sass/page-content.scss */
+  /* line 580, ../sass/page-content.scss */
   .ntq-banner-price > p:first-child {
     width: 45%;
   }
 
-  /* line 583, ../sass/page-content.scss */
+  /* line 584, ../sass/page-content.scss */
   .ntq-banner-price > span:nth-last-child(2n) {
     left: 97px;
   }
 
-  /* line 587, ../sass/page-content.scss */
+  /* line 588, ../sass/page-content.scss */
   .ntq-banner-price > span > em {
     color: #b2b2b2;
     font-size: 12px;

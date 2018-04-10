@@ -189,6 +189,11 @@
     color: #000;
 }
 
+.ntq-nav-bar > .nav > ul > li > a:active {
+    text-decoration: none;
+    color: red;
+}
+
 .ntq-header-search-picto {
     height: 20px;
     width: 20px;
