@@ -45,24 +45,24 @@
         });
 
         // Arrow scroll down
-        $('.ntq-cover-arrow').on('click', function(){
+        var arrowCover = ('.ntq-cover-arrow');
+        $(arrowCover).on('click', function(){
             $('html, body').animate({
                 scrollTop: $('.ntq-banner-full-width').offset().top
-            },1500);
+            },800);
         });
-
-        // opening search bar header
-        // $('#search').click(function(){
-        //     var search = $('#open-search').css('display');
-        //     if(search != 'block') {
-        //         $('#open-search').css('display', 'none');
-        //     }
-        //     if(search != 'none') {
-        //         $('#open-search').css('display', 'block');
-        //     }
-        //     // $('.nav').fadeIn('slow', 'linear');
-
-        // });
+        $(arrowCover).mouseenter(function(){
+            $(this).css({
+                transform: 'scale3d(1.2, 1.2, 1.2)',
+                transition: '300ms ease-in-out',
+            });
+        });
+        $(arrowCover).mouseleave(function(){
+            $(this).css({
+                transform: 'scale3d(1, 1, 1)',
+                transition: '300ms ease-in-out',
+            });
+        });
 
         // color rent button
         var button = ('.ntq-product-btn, .ntq-btn');
@@ -71,21 +71,6 @@
         });
         $(button).mouseleave(function(){
             $(this).css('background-color', 'red')
-        });
-
-        // transformation scale arrows banner
-        var arrows = ('.ntq-arrow-prev, .ntq-arrow-next')
-        $(arrows).mouseenter(function(){
-            $(this).css({
-                transform: 'scale3d(2, 2, 0)',
-                transition: '300ms ease-in-out',
-            });
-        });
-        $(arrows).mouseleave(function(){
-            $(this).css({
-                transform: 'scale3d(1, 1, 0)',
-                transition: '300ms ease-in-out',
-            });
         });
     });
 
