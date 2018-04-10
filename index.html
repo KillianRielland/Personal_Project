@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Espace Nautique</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.svg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/global.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="./stylesheets/page-content.css">
+    <link rel="stylesheet" href="./stylesheets/location-products.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+
+    // opening button burger
+    $(document).ready(function(){
+        $('.burger').click(function(){
+            $(this).toggleClass('open');
+                $('.nav').toggleClass('open');
+                $('header').toggleClass('open');
+                $('nav').toggleClass('open');
+        });
+
+        // transformation scale top title
+        var zoomTitle = ('.ntq-header-title');
+        $(zoomTitle).mouseenter(function(){
+            $(this).css({
+                transform: 'scale3d(1.2, 1.2, 1.2)',
+                transition: '500ms ease-in-out',
+            });
+        });
+        $(zoomTitle).mouseleave(function(){
+            $(this).css({
+                transform: 'scale3d(1, 1, 1)',
+                transition: '500ms ease-in-out',
+            });
+        });
+
+        // Arrow scroll down
+        $('.ntq-cover-arrow').on('click', function(){
+            $('html, body').animate({
+                scrollTop: $('.ntq-banner-full-width').offset().top
+            },1500);
+        });
+
+        // opening search bar header
+        // $('#search').click(function(){
+        //     var search = $('#open-search').css('display');
+        //     if(search != 'block') {
+        //         $('#open-search').css('display', 'none');
+        //     }
+        //     if(search != 'none') {
+        //         $('#open-search').css('display', 'block');
+        //     }
+        //     // $('.nav').fadeIn('slow', 'linear');
+
+        // });
+
+        // color rent button
+        var button = ('.ntq-product-btn, .ntq-btn');
+        $(button).mouseenter(function(){
+            $(this).css('background-color', '#dd0d1e')
+        });
+        $(button).mouseleave(function(){
+            $(this).css('background-color', 'red')
+        });
+
+        // transformation scale arrows banner
+        var arrows = ('.ntq-arrow-prev, .ntq-arrow-next')
+        $(arrows).mouseenter(function(){
+            $(this).css({
+                transform: 'scale3d(2, 2, 0)',
+                transition: '300ms ease-in-out',
+            });
+        });
+        $(arrows).mouseleave(function(){
+            $(this).css({
+                transform: 'scale3d(1, 1, 0)',
+                transition: '300ms ease-in-out',
+            });
+        });
+    });
+
+</script>
+
+</head>
+
+<body>
+    <header class="ntq-header">
+        <section class="ntq-header-lang">
+            <div class="ntq-header-phone">
+                <figure>
+                        <a href="javascript:popupBasique('popup.html')">
+                            <svg version="1.1" alt="pictogramme téléphone, numéro de téléphone" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="-415 590.6 11 11" style="enable-background:new -415 590.6 11 11;" xml:space="preserve">
+                            <path d="M-404.2,599.1l-0.1-0.1c-0.2-0.4-2.5-1-2.6-1l-0.2,0c-0.3,0.1-0.7,0.3-1.4,0.9c-0.8-0.3-1.9-1.3-2.4-1.8
+                                c-0.6-0.6-1.3-1.6-1.5-2.3c0.8-0.7,1.2-1,1.2-1.3c0-0.2-0.4-2.3-0.8-2.6l-0.1-0.1c-0.3-0.2-0.7-0.4-1.1-0.3c-0.1,0-0.2,0.1-0.3,0.1
+                                c-0.3,0.2-1,0.6-1.3,1.2c-0.2,0.4-0.3,3.8,2.5,6.7c2.8,2.9,6.2,3,6.7,2.9l0,0l0,0c0.7-0.2,1.3-0.8,1.5-1.1
+                                C-403.8,600-404.1,599.4-404.2,599.1z"/>
+                            </svg>
+                        </a>
+                </figure>
+            </div>
+            <span class="ntq-header-store">
+                <a href="#">golgoth-store.com</a>
+            </span>
+            <ul>
+                <li>fr</li>
+                <li>en</li>
+                <li>it</li>
+            </ul>
+        </section>
+        <section class="ntq-header-title">
+            <a href="./index.html">
+                <h2>espace</h2>
+                <h1 class="ntq-header-title-bold">nautique</h1>
+            </a>
+        </section>
+        <div class="ntq-header-item">
+            <figure class="ntq-header-item-profil">
+                <img src="./img/picto_profil.svg" alt="accédez à votre profil">
+            </figure>
+            <figure class="ntq-header-item-panier">
+                <img src="./img/picto_panier.svg" alt="Votre panier">
+            </figure>
+        </div>
+        <nav class="ntq-nav-bar">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">portes-bateaux</a></li>
+                    <li><a href="#">quickflex</a></li>
+                    <li><a href="#">location/service</a></li>
+                    <li><a href="#">entretien</a></li>
+                    <li><a href="#">qui sommes-nous ?</a></li>
+                </ul>
+            </div>
+        </nav>
+        <form class="ntq-header-searchBar" action="#">
+            <input id="open-search" type="text" placeholder="Vous cherchez ?">
+            <button id="search" type="button"><img class="ntq-header-search-picto" src="./img/picto_search.svg" alt=""></button>
+        </form>
+    </header>
+    <article class="ntq-page-content">
+        <section class="ntq-cover">
+            <div>
+                <figure>
+                    <div class="ntq-cover-on__title">
+                        <p class="ntq-cover-number">N°1</p>
+                        <p>des remorques porte-bateau en france</p>
+                    </div>
+                    <img style="display: none;" class="ntq-cover-img" src="./img/cover-mobile.jpg" alt="image cover du numero un des remorques porte-bateau en france">
+                    <img class="ntq-cover-arrow" src="./img/picto_scroll_down.svg" alt="Flèche scroll vers le bas">
+                </figure>
+            </div>
+        </section>
+        <section class="ntq-banner-full-width">
+            <div class="ntq-banner-title">
+                <h1>les portes-bateaux</h1>
+            </div>
+            <section>
+                <div class="ntq-banner-block-text">
+                    <p>
+                        <span>Nous transportons vos bateaux depuis bientôt 50 ans sous les marques Satellite, Océana, Rocca et
+                            Nautilus.
+                        </span>
+                        <br>
+                        <br> Nos marques s’inscrivent dans cette tradition historique à l’écoute des professionnels et confortent
+                        au quotidien leur image de leaders techniques. Dotées d’un design élégant, d’une construction de
+                        grande qualité, nos remorques intègrent les solutions techniques les plus abouties pour faciliter
+                        le transport et la manutention de votre bateau en toute sécurité.
+                    </p>
+                    <button class="ntq-btn">découvrez nos produits</button>
+                </div>
+                <div class="ntq-banner-block-img">
+                    <div class="ntq-arrow-prev">
+                        <img src="./img/picto_arrow.svg" alt="">
+                    </div>
+                    <figure>
+                        <img src="./img/img_01.png" alt="image d'un porte-bateau">
+                    </figure>
+                    <div class="ntq-arrow-next">
+                        <img src="./img/picto_arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="ntq-banner-price">
+                    <p>469<em>€</em></p>
+                    <span>699<em>€</em></span>
+                    <span></span>
+                    <p>Remorque Nautilus</p>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h2 class="ntq-title">Location</h2>
+            <section class="ntq-other-products">
+                <div class="ntq-product">
+                    <figure>
+                        <img class="zoom-product" src="./img/img_jet_satellite.png" alt="porte bateau jet satellite">
+                    </figure>
+                    <span>Jet Satellite</span>
+                    <ul>
+                        <li>Charge utile : 1880kg</li>
+                        <li>PTC : 2500 kg</li>
+                        <li> Nb essieu : 2</li>
+                        <li>Dimension utile : 4m10x2m00</li>
+                        <li>Roues : 195/55R10C</li>
+                        <li>Frein : Oui</li>
+                    </ul>
+                    <button type="button" class="ntq-product-btn">
+                        Louer
+                    </button>
+                </div>
+                <div class="ntq-product">
+                    <figure>
+                        <img class="zoom-product" src="./img/img_motorboat_satellite.png" alt="porte bateau MotorBoat Satellite">
+                    </figure>
+                    <span>MotorBoat Satellite</span>
+                    <ul>
+                        <li>Charge utile : 1880kg</li>
+                        <li>PTC : 2500 kg</li>
+                        <li> Nb essieu : 2</li>
+                        <li>Dimension utile : 4m10x2m00</li>
+                        <li>Roues : 195/55R10C</li>
+                        <li>Frein : Oui</li>
+                    </ul>
+                    <button type="button" class="ntq-product-btn">
+                        Louer
+                    </button>
+                </div>
+                <div class="ntq-product">
+                    <figure>
+                        <img class="zoom-product" src="./img/img_sailing_keel_and_boat.png" alt="porte bateau Sailing and kell boat">
+                    </figure>
+                    <span>Sailing and kell boat</span>
+                    <ul>
+                        <li>Charge utile : 1880kg</li>
+                        <li>PTC : 2500 kg</li>
+                        <li> Nb essieu : 2</li>
+                        <li>Dimension utile : 4m10x2m00</li>
+                        <li>Roues : 195/55R10C</li>
+                        <li>Frein : Oui</li>
+                    </ul>
+                    <button type="button" class="ntq-product-btn">
+                        Louer
+                    </button>
+                </div>
+            </section>
+        </section>
+    </article>
+
+    <!-- ***** FOOTER ************************************** -->
+
+    <footer class="ntq-footer">
+        <section class="ntq-footer-container">
+            <section>
+                <div class="ntq-footer-research">
+                    <div class="ntq-footer-logo">
+                        <a href="#">
+                            <h2>Epsace</h2>
+                            <h1>Nautique</h1>
+                        </a>
+                    </div>
+                    <div class="ntq-footer-searchBar">
+                        <form action="#">
+                            <input type="text" placeholder="Votre email..">
+                        </form>
+                        <div class="ntq-search-picto">
+                            <img src="./img/picto_search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <ul class="ntq-container-list">
+                    <li class="ntq-footer-list">
+                        <h1>Portes-bateaux</h1>
+                        <ul class="ntq-list-elements">
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ntq-footer-list">
+                        <h1>Quickflex</h1>
+                        <ul class="ntq-list-elements">
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ntq-footer-list">
+                        <h1>Location / Service</h1>
+                        <ul class="ntq-list-elements">
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ntq-footer-list">
+                        <h1>Entretien</h1>
+                        <ul class="ntq-list-elements">
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ntq-footer-list">
+                        <h1>Qui sommes-nous ?</h1>
+                        <ul class="ntq-list-elements">
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">lorem ipsum</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="ntq-footer-legals">
+                <div>
+                    <span>
+                        <a href="#">Plan du site</a>
+                    </span>
+                    <span>
+                        <a href="#">Mentions légales</a>
+                    </span>
+                    <span>
+                        <a href="#">Contact</a>
+                    </span>
+                </div>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>

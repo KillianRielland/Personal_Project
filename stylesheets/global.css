@@ -1,0 +1,11 @@
+/* line 1, ../sass/global.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* line 8, ../sass/global.scss */
+.ntq-page-content {
+  min-height: 600px;
+}
